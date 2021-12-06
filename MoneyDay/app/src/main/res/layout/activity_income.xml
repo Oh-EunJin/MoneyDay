@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#eeeeee"
+    android:orientation="vertical"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFBC42">
+
+        <TextView
+            android:text="수입 입력"
+            android:textSize="20sp"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:background="#FFBC42"
+            android:layout_width="match_parent"
+            android:layout_height="53dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/WName"
+            android:layout_width="275dp"
+            android:layout_height="48dp"
+            android:layout_marginLeft="12dp"
+            android:ems="10"
+            android:hint="근무지 이름"
+            android:gravity="center"
+            android:inputType="textPersonName" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+        <ImageButton
+            android:id="@+id/STime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:layout_alignParentLeft = "true"
+            android:background="#00000000"
+            android:maxWidth="70dp"
+            android:maxHeight="70dp"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/sun"
+            android:layout_weight="1"
+            android:onClick="OnStart" />
+
+        <ImageButton
+            android:id="@+id/ETime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:layout_alignParentLeft = "true"
+            android:background="#00000000"
+            android:maxWidth="70dp"
+            android:maxHeight="70dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/moon"
+            android:layout_weight="1"
+            android:onClick="OnEnd" />
+
+        <!--<TimePicker
+            android:id="@+id/startTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:timePickerMode="spinner"/>-->
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:id="@+id/sTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="시작 시간"
+                android:textSize="15sp"
+                android:textColor="#FF8F00"
+                android:textStyle="bold"
+                android:layout_weight="1"
+                android:layout_marginLeft="5dp"
+                android:gravity="center" />
+
+            <TextView
+                android:id="@+id/eTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="종료 시간"
+                android:textSize="15sp"
+                android:textColor="#FF8F00"
+                android:textStyle="bold"
+                android:layout_weight="1"
+                android:layout_marginRight="5dp"
+                android:gravity="center" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="￦"
+                android:textSize="17sp"
+                android:textColor="#ff5f2e"
+                android:textStyle="bold"
+                android:layout_marginLeft="105dp"
+                android:gravity="center" />
+
+            <EditText
+                android:id="@+id/Pay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="3"
+                android:text="00.0"
+                android:textColor="#ff5f2e"
+                android:inputType="number"
+                android:gravity="center" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="기본시급"
+                android:textSize="12sp"
+                android:textColor="#ff5f2e"
+                android:layout_marginLeft="133dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:background="#66bdbdbd"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="20dp"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/button_clo"
+            android:textSize="15sp"
+            android:textColor="#ff7a00"
+            android:textStyle="bold"
+            android:padding="16dp"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="53dp"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:background="#00000000"
+            android:text="취소" />
+
+        <Button
+            android:id="@+id/button_regi"
+            android:textSize="15sp"
+            android:textColor="#ff7a00"
+            android:textStyle="bold"
+            android:padding="16dp"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="53dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="#00000000"
+            android:text="등록" />
+
+    </LinearLayout>
+</LinearLayout>
+
+

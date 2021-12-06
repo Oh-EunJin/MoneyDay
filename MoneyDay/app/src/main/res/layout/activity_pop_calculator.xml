@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".PopCalculator"
+    android:background="#ffffff">
+
+    <LinearLayout
+        android:id="@+id/linearlayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:background="#FFBC42"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textColor="#ffffff">
+
+        <Button
+            android:id="@+id/Cancle"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:background="#FFBC42"
+            android:onClick="mOnClose"
+            android:text="×"
+            android:textColor="#f94e3f"
+            android:textSize="35sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:background="#FFBC42"
+            android:onClick="onClick"
+            android:text="＜"
+            android:textSize="15sp"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="20sp"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:gravity="center_horizontal" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:onClick="onClick"
+            android:background="#FFBC42"
+            android:text="＞"
+            android:textSize="15sp"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <GridView
+        android:layout_marginTop="10dp"
+        android:id="@+id/gridview"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:numColumns="7"  >
+    </GridView>
+
+    <View
+        android:background="#BACAFF"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"/>
+
+    <!--<TextView
+        android:id="@+id/StartDay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:text="시작일 :    - "
+        android:textSize="20sp"
+        android:onClick="onCheckS" />
+
+    <TextView
+        android:id="@+id/EndDay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:text="종료일 :    - "
+        android:textSize="20sp"
+        android:onClick="onCheckE" />-->
+
+    <TextView
+        android:id="@+id/tPay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text=""
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/SPay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="270dp"
+        android:text=""
+        android:textSize="30sp"
+        android:textColor="#ff5f2e"
+        android:textStyle="bold" />
+
+
+</LinearLayout>
